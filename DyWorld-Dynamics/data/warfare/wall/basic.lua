@@ -10,6 +10,8 @@ local DyWorld_Prototype_Gate = DyDs_CopyPrototype("gate", "gate", k.."-gate", tr
 	DyWorld_Prototype_Gate.hide_resistances = false
 	DyWorld_Prototype_Wall.localised_name = {"looped-name.wall-1", {"looped-name."..k}}
 	DyWorld_Prototype_Gate.localised_name = {"looped-name.wall-2", {"looped-name."..k}}
+	DyWorld_Prototype_Wall.localised_description = {"looped-description.wall-1", DyWorld_Prototype_Wall.max_health}
+	DyWorld_Prototype_Gate.localised_description = {"looped-description.wall-2", DyWorld_Prototype_Gate.max_health}
 	DyWorld_Prototype_Wall.resistances = {}
 	DyWorld_Prototype_Gate.resistances = {}
 	for Type, Numbers in pairs(v.Resistances) do
